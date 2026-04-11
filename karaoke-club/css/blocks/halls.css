@@ -1,0 +1,291 @@
+.halls {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  background: var(--bg-color-dark);
+}
+
+.halls__container {
+  max-width: 1920px;
+  height: auto;
+}
+
+.halls_title {
+  position: relative;
+  padding-top: 111px;
+  z-index: var(--layer-1);
+}
+
+@media (width <= 992px) {
+  .halls_title {
+    padding-top: 60px;
+  }
+}
+
+@media (width > 768px) {
+  .title-sm-br-less {
+    display: none;
+  }
+}
+
+@media (width <= 768px) {
+  .halls_title {
+    padding-top: 40px;
+  }
+
+  .title-sm-br-more {
+    display: none;
+  }
+}
+
+.tabs__item {
+  display: none;
+  margin-bottom: 61px;
+}
+@media (width <= 1320px) {
+  .tabs__item {
+    margin-bottom: 35px;
+  }
+}
+
+.tabs__item.active {
+  display: block;
+}
+
+.tabs__btn.active {
+  color: var(--accent-color);
+}
+
+.tabs {
+  margin-top: 76px;
+}
+
+@media (width <= 768px) {
+  .tabs {
+    margin-top: 32px;
+  }
+}
+
+.tabs__nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-bottom: 35px;
+  z-index: var(--layer-1);
+}
+
+@media (width <= 768px) {
+  .tabs__nav {
+    gap: 25px;
+  }
+}
+
+.tabs__btn {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #606571;
+}
+
+.tabs__item-characteristics {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  max-width: 325px;
+  gap: 12px;
+  min-height: 41px;
+  margin-bottom: 11px;
+  padding-right: 60px;
+  padding-left: 13px;
+  background: linear-gradient(
+    to right,
+    rgba(246, 144, 32, 0.24) 0%,
+    rgba(246, 144, 32, 0) 100%
+  );
+}
+
+.tabs__item-text {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: var(--main-color);
+}
+
+@media (width <= 768px) {
+  .tabs__item-text {
+    font-size: 14px;
+  }
+}
+
+.product-slider {
+  position: absolute;
+  top: 0;
+  left: 27%;
+  width: 73%;
+  height: auto;
+  max-width: 1407px;
+
+  overflow: hidden;
+  z-index: var(--layer-0);
+  aspect-ratio: 16 / 11;
+}
+
+@media (width <= 1520px) {
+  .product-slider {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 97%;
+    max-width: 1407px;
+    margin-bottom: 30px;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+.main-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbs-slider {
+  position: absolute;
+  bottom: 21%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--layer-1);
+  box-sizing: border-box;
+  aspect-ratio: 16 / 2;
+}
+
+@media (width <= 1520px) {
+  .thumbs-slider {
+    bottom: 33%;
+    left: 50%;
+  }
+}
+
+.thumbs-slider .swiper-slide {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  filter: brightness(0.3);
+  transition: all 0.3s ease;
+  width: 20%;
+  height: 100%;
+}
+
+.thumbs-slider .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 2px solid #f69020;
+}
+.thumbs-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 198, 25, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thumbs-slider .swiper-slide:hover,
+.thumbs-slider .swiper-slide-thumb-active {
+  filter: brightness(1);
+}
+
+.thumbs-slider .swiper-slide:hover .thumb-overlay {
+  opacity: 1;
+}
+
+.eye-icon {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+@media (width <= 768px) {
+  .eye-icon {
+    max-width: 29px;
+    max-height: 16px;
+  }
+}
+
+.halls_slider-controls {
+  margin-top: 78px;
+}
+
+@media (width <= 1320px) {
+  .halls_slider-controls {
+    margin-top: 35px;
+  }
+}
+
+
+
+.current {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+@media (width <= 768px) {
+  .current {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 253%;
+  }
+}
+
+.divider,
+.total {
+  font-size: 16px;
+  color: #606571;
+}
+
+@media (width <= 768px) {
+  .divider,
+  .total {
+    font-size: 14px;
+  }
+}
+
+.halls__button {
+  margin-bottom: 120px;
+}
+
+@media (width <= 1725px) {
+  .halls__button {
+    margin-bottom: 56px;
+  }
+}
+
+@media (width <= 1080px) {
+  .halls__button {
+    margin-left: 21px;
+  }
+}
+
+.halls__background-line {
+  background-color: #ffc619;
+}
+
+@media (width <= 992px) {
+  .halls__background-line {
+    display: none;
+  }
+}

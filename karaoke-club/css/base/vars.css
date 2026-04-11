@@ -1,0 +1,27 @@
+:root {
+  /* font-family */
+  --font-family: "Muller", sans-serif;
+
+  /* colors */
+  --main-color: #fff;
+  --accent-color: #ffc619;
+  --bg-color: #191b20;
+  --bg-color-dark: #131517;
+  
+
+  /* container */
+  --container-width: 1920px;
+  --container-padding: 0px;
+
+  /* transitions */
+  --transition-time: 0.2s;
+
+  /* layers */
+  --layer-negative-2: -2;
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+  --layer-4: 4;
+}

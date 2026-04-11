@@ -1,0 +1,1783 @@
+<!doctype html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="icon"
+      href="./icon/favicon-icon-64x64.png"
+      sizes="64x64"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+    <title>Karaoke Club</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="#">
+          <img
+            class="logo__icon"
+            src="./icon/logo-icon.svg"
+            width="293"
+            height="67"
+            alt="Логотип караоке бара Харизма"
+          />
+        </a>
+        <nav class="header__info" id="header__info" aria-label="Главное меню">
+          <a class="header__phone" title="номер телефона" href="+380979709090">
+            <svg class="info__svg info__phone-svg" width="29" height="29">
+              <use
+                class="header__phone-icon"
+                href="./icon/sprit.svg#phone"
+              ></use>
+            </svg>
+            <p class="header__info-text header__text">+38 (097) 970-90-90</p>
+          </a>
+          <button class="header__map map" id="map" title="карта" aria-label="карта">
+            <svg class="info__svg info__svg-map" width="34" height="34">
+              <use class="header__mark-icon" href="./icon/sprit.svg#mark"></use>
+            </svg>
+            <span class="header__info-text header__text">м. Лубянка </span>
+          </button>
+          <a class="header__our-halls text__button-hf" href="#halls">Наши залы</a>
+          <button
+            class="header__book book text__button-hf"
+            aria-label="Забронировать"
+          >
+            Забронировать
+          </button>
+        </nav>
+        <button class="header__map-mobil map" title="карта" aria-label="карта">
+          <svg class="info__svg info__svg-map" width="34" height="34">
+            <use class="header__mark-icon" href="./icon/sprit.svg#mark"></use>
+          </svg>
+        </button>
+        <button
+          class="header__burger burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="header__info"
+        >
+          <svg class="header__burger-svg">
+            <use class="burger__icon-menu" href="./icon/sprit.svg#burger"></use>
+            <use class="burger__icon-cross" href="./icon/sprit.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero" id="hero">
+        <div class="container hero__container">
+          <header class="hero__header">
+            <div class="hero__title padding-left">
+              <h3 class="hero__title-sm text-regular">
+                Арендуй Караоке-Зал <br class="hero__title-sm-br" />
+                до 10 человек
+              </h3>
+              <h1 class="hero__title-main title">
+                возьми <br class="hero__title-main-br" />
+                алкоголь<br />
+                и еду с собой
+                <a href="#map" class="hero_link-title map">м. Лубянка</a>
+              </h1>
+            </div>
+            <ul class="hero__benefits-list">
+              <li class="hero__benefits-item">
+                <img
+                  class="hero__benefits-svg"
+                  src="./icon/hero-header-mark.svg"
+                  width="50"
+                  height="50"
+                  alt="иконка галочки преимуществ"
+                />
+                Если хочешь попеть<br />
+                и оторваться
+              </li>
+              <li class="hero__benefits-item">
+                <img
+                  class="hero__benefits-svg"
+                  src="./icon/hero-header-mark.svg"
+                  width="50"
+                  height="50"
+                  alt="иконка галочки преимуществ"
+                />
+                Отдохнуть<br />
+                после работы
+              </li>
+              <li class="hero__benefits-item">
+                <img
+                  class="hero__benefits-svg"
+                  src="./icon/hero-header-mark.svg"
+                  width="50"
+                  height="50"
+                  alt="иконка галочки преимуществ"
+                />
+                Хорошо <br />провести <br class="hero__benefits-text-br" />
+                время
+              </li>
+            </ul>
+            <button class="hero__header-button book book-button">
+              Забронировать онлайн
+            </button>
+            <div
+              class="section__background-accent section__background-accent-left"
+            ></div>
+          </header>
+          <div class="hero__time-icon">
+            <div class="hero__time-text">
+              <p class="hero__time-text-can">Можно шуметь</p>
+              <p class="hero__time-text-all">Круглосуточно</p>
+            </div>
+            <img
+              class="hero__time-noise"
+              src="./icon/hero-time-noise.svg"
+              width="373"
+              height="373"
+              alt="Время которое можно шуметь"
+            />
+          </div>
+          <picture>
+            <source srcset="./images/room-club.webp" type="image/webp" />
+            <img
+              class="hero__img-room-club"
+              src="./images/room-club.png"
+              width="1024"
+              height="685"
+              alt="Интерьер кабинки в караоке клубе"
+            />
+          </picture>
+          <div class="hero__images-group">
+            <picture>
+              <source
+                srcset="./images/hero-dancing-girl.webp"
+                type="image/webp"
+              />
+              <img
+                class="hero__img-dancing-girl"
+                src="./images/hero-dancing-girl.png"
+                width="700"
+                height="1247"
+                alt="Девушка танцует и поёт в микрофон"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="./images/hero-microphone.webp"
+                type="image/webp"
+              />
+              <img
+                class="hero__img-microphone"
+                src="./images/hero-microphone.png"
+                width="167"
+                height="624"
+                alt="Микрофон на ножке"
+              />
+            </picture>
+          </div>
+          <div class="global__background-line hero__background">
+            <div class="background-line1 background-line"></div>
+            <div class="background-line2 background-line"></div>
+            <div class="background-line3 background-line"></div>
+            <div class="background-line4 background-line"></div>
+          </div>
+          <a class="hero__background-text" href="#halls">Листайте вниз</a>
+          <a class="hero__telegram" href="+380979709090">
+            <svg width="35" height="35">
+              <use
+                class="hero__telegram-icon"
+                href="./icon/sprit.svg#telegram"
+              ></use>
+            </svg>
+            <p class="hero__telegram-text">Связаться с нами</p>
+          </a>
+          <footer class="hero__footer">
+            <div class="hero__footer-items hero_footer-items1">
+              <div class="hero__footer-top">
+                <img
+                  class="hero__footer-icon"
+                  src="./icon/hero-footer-icon/hero-footer-micro.svg"
+                  width="70"
+                  height="70"
+                  alt="иконка микрофона"
+                />
+                <div class="hero__footer-line"></div>
+              </div>
+              <p class="hero__footer-text">
+                Профессиональное<br />
+                караоке AST-50
+              </p>
+            </div>
+            <div class="hero__footer-items hero_footer-items2">
+              <div class="hero__footer-top">
+                <img
+                  class="hero__footer-icon"
+                  src="./icon/hero-footer-icon/hero-footer-champagne.svg"
+                  width="67"
+                  height="67"
+                  alt="иконка бутылки шампанского"
+                />
+                <div class="hero__footer-line"></div>
+              </div>
+              <p class="hero__footer-text">
+                Без пробкового <br class="hero__footer-text-br" />
+                сбора
+              </p>
+            </div>
+            <div class="hero__footer-items hero_footer-items1">
+              <div class="hero__footer-top">
+                <img
+                  class="hero__footer-icon"
+                  src="./icon/hero-footer-icon/hero-footer-money.svg"
+                  width="68"
+                  height="68"
+                  alt="иконка денег"
+                />
+                <div class="hero__footer-line"></div>
+              </div>
+              <p class="hero__footer-text">Без депозита</p>
+            </div>
+            <div class="hero__footer-items hero_footer-items2">
+              <div class="hero__footer-top">
+                <img
+                  class="hero__footer-icon"
+                  src="./icon/hero-footer-icon/hero-footer-holiday.svg"
+                  width="68"
+                  height="68"
+                  alt="иконка маленького салюта га праздник"
+                />
+                <div class="hero__footer-line"></div>
+              </div>
+              <p class="hero__footer-text">
+                Скидка <br />
+                в День Рождения
+              </p>
+            </div>
+          </footer>
+        </div>
+      </section>
+      <section class="halls" id="halls">
+        <div class="halls__container container">
+          <div class="halls_title padding-left">
+            <h2 class="title">Наши залы</h2>
+            <h3 class="title-sm">
+              Ознакомьтесь <br class="title-sm-br-less" />
+              с атмосферой <br class="title-sm-br-more" />
+              праздника
+            </h3>
+          </div>
+          <div class="tabs padding-left">
+            <!-- Кнопки управления -->
+            <div class="tabs__nav">
+              <button class="tabs__btn active" data-tab="tab-1">Hall №1</button>
+              <button class="tabs__btn" data-tab="tab-2">Hall №2</button>
+              <button class="tabs__btn" data-tab="tab-3">Hall №3</button>
+              <button class="tabs__btn" data-tab="tab-4">Hall №4</button>
+            </div>
+            <!-- Контент -->
+            <div class="tabs__content">
+              <div class="tabs__item active" id="tab-1">
+                <div class="product-slider">
+                  <!-- Основной большой слайдер -->
+                  <div class="swiper main-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 7.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 10.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 11.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 12.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 13.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Маленькие превью (Thumbs) -->
+                  <div class="swiper thumbs-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 7.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 10.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 11.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 12.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 13.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="21" height="21">
+                    <use href="./icon/sprit.svg#hall-number"></use>
+                  </svg>
+                  <p class="tabs__item-text">№ 1</p>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="19" height="19">
+                    <use href="./icon/sprit.svg#hall-area"></use>
+                  </svg>
+                  <p class="tabs__item-text">40 м<sup>2</sup></p>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="21" height="21">
+                    <use href="./icon/sprit.svg#capacity"></use>
+                  </svg>
+                  <p class="tabs__item-text">до 20-ти человек</p>
+                </div>
+                <div class="halls_slider-controls slider-controls">
+                  <button class="slider-btn slider-prev" type="button">
+                    <img
+                      class="slider__btn-img"
+                      src="./icon/halls-arrow-left.svg"
+                      alt="Назад"
+                    />
+                  </button>
+                  <div class="slider-counter">
+                    <span class="current">1</span>
+                    <span class="divider">из</span>
+                    <span class="total">5</span>
+                  </div>
+                  <button class="slider-btn slider-next" type="button">
+                    <img
+                      class="slider__btn-img"
+                      src="./icon/halls-arrow-left.svg"
+                      alt="Вперед"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="tabs__item" id="tab-2">
+                <div class="product-slider">
+                  <!-- Основной большой слайдер -->
+                  <div class="swiper main-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 7.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 10.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 11.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 12.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 13.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Маленькие превью (Thumbs) -->
+                  <div class="swiper thumbs-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 7.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 10.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 11.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 12.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 13.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="21" height="21">
+                    <use href="./icon/sprit.svg#hall-number"></use>
+                  </svg>
+                  <p class="tabs__item-text">№ 2</p>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="19" height="19">
+                    <use href="./icon/sprit.svg#hall-area"></use>
+                  </svg>
+                  <p class="tabs__item-text">40 м<sup>2</sup></p>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="21" height="21">
+                    <use href="./icon/sprit.svg#capacity"></use>
+                  </svg>
+                  <p class="tabs__item-text">до 20-ти человек</p>
+                </div>
+                <div class="halls_slider-controls slider-controls">
+                  <button class="slider-btn slider-prev" type="button">
+                    <img
+                      class="slider__btn-img"
+                      src="./icon/halls-arrow-left.svg"
+                      alt="Назад"
+                    />
+                  </button>
+                  <div class="slider-counter">
+                    <span class="current">1</span>
+                    <span class="divider">из</span>
+                    <span class="total">5</span>
+                  </div>
+                  <button class="slider-btn slider-next" type="button">
+                    <img
+                      class="slider__btn-img"
+                      src="./icon/halls-arrow-left.svg"
+                      alt="Вперед"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="tabs__item" id="tab-3">
+                <div class="product-slider">
+                  <!-- Основной большой слайдер -->
+                  <div class="swiper main-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 7.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 10.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 11.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 12.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 13.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Маленькие превью (Thumbs) -->
+                  <div class="swiper thumbs-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 7.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 10.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 11.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 12.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 13.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="21" height="21">
+                    <use href="./icon/sprit.svg#hall-number"></use>
+                  </svg>
+                  <p class="tabs__item-text">№ 3</p>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="19" height="19">
+                    <use href="./icon/sprit.svg#hall-area"></use>
+                  </svg>
+                  <p class="tabs__item-text">40 м<sup>2</sup></p>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="21" height="21">
+                    <use href="./icon/sprit.svg#capacity"></use>
+                  </svg>
+                  <p class="tabs__item-text">до 20-ти человек</p>
+                </div>
+                <div class="halls_slider-controls slider-controls">
+                  <button class="slider-btn slider-prev" type="button">
+                    <img
+                      class="slider__btn-img"
+                      src="./icon/halls-arrow-left.svg"
+                      alt="Назад"
+                    />
+                  </button>
+                  <div class="slider-counter">
+                    <span class="current">1</span>
+                    <span class="divider">из</span>
+                    <span class="total">5</span>
+                  </div>
+                  <button class="slider-btn slider-next" type="button">
+                    <img
+                      class="slider__btn-img"
+                      src="./icon/halls-arrow-left.svg"
+                      alt="Вперед"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="tabs__item" id="tab-4">
+                <div class="product-slider">
+                  <!-- Основной большой слайдер -->
+                  <div class="swiper main-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 7.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 10.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 11.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 12.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 13.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Маленькие превью (Thumbs) -->
+                  <div class="swiper thumbs-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 7.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 10.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 11.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 12.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./images/halls-img-tab-1/Rectangle 13.png"
+                          alt=""
+                        />
+                        <div class="thumb-overlay">
+                          <img
+                            src="./icon/eye-icon.svg"
+                            class="eye-icon"
+                            width="50"
+                            height="50"
+                            alt="Посмотреть"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="21" height="21">
+                    <use href="./icon/sprit.svg#hall-number"></use>
+                  </svg>
+                  <p class="tabs__item-text">№ 4</p>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="19" height="19">
+                    <use href="./icon/sprit.svg#hall-area"></use>
+                  </svg>
+                  <p class="tabs__item-text">40 м<sup>2</sup></p>
+                </div>
+                <div class="tabs__item-characteristics">
+                  <svg width="21" height="21">
+                    <use href="./icon/sprit.svg#capacity"></use>
+                  </svg>
+                  <p class="tabs__item-text">до 20-ти человек</p>
+                </div>
+                <div class="halls_slider-controls slider-controls">
+                  <button class="slider-btn slider-prev" type="button">
+                    <img
+                      class="slider__btn-img"
+                      src="./icon/halls-arrow-left.svg"
+                      alt="Назад"
+                    />
+                  </button>
+                  <div class="slider-counter">
+                    <span class="current">1</span>
+                    <span class="divider">из</span>
+                    <span class="total">5</span>
+                  </div>
+                  <button class="slider-btn slider-next" type="button">
+                    <img
+                      class="slider__btn-img"
+                      src="./icon/halls-arrow-left.svg"
+                      alt="Вперед"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="halls__button book book-button">Забронировать</button>
+          <div class="global__background-line">
+            <div class="halls__background-line background-line"></div>
+            <div class="halls__background-line background-line"></div>
+            <div class="halls__background-line background-line"></div>
+            <div class="halls__background-line background-line"></div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages" id="advantages">
+        <div class="advantages__container container">
+          <div class="advantages__title padding-left">
+            <h2 class="title">Наши Преимущества</h2>
+            <h3 class="title-sm">Почему гости выбирают нас</h3>
+          </div>
+          <div class="advantages__grid padding-left">
+            <div class="advantages__grid-items">
+              <img
+                class="advantages__grid-icon"
+                src="./icon/advantages-grid-icon/advantages-grid-cloth.svg"
+                width="80"
+                height="80"
+                alt="иконка одежды"
+              />
+              <h4 class="advantages__grid-title">Никакого дресс-контроля</h4>
+            </div>
+            <div class="advantages__grid-items">
+              <img
+                class="advantages__grid-icon"
+                src="./icon/advantages-grid-icon/advantages-grid-cd.svg"
+                width="86"
+                height="86"
+                alt="иконка диска для компьютера"
+              />
+              <h4 class="advantages__grid-title">~ 40.000 песен в сет листе</h4>
+              <ul class="advantages__grid-list">
+                <li class="advantages__grid-text text-regular">
+                  Более 50,000 студийных фонограмм
+                </li>
+                <li class="advantages__grid-text text-regular">
+                  Ежемесячное обновления репертуара
+                </li>
+              </ul>
+            </div>
+            <div class="advantages__grid-items">
+              <img
+                class="advantages__grid-icon"
+                src="./icon/advantages-grid-icon/advantages-grid-people.svg"
+                width="80"
+                height="80"
+                alt="иконка танцующих людей"
+              />
+              <h4 class="advantages__grid-title">Индивидуальные залы</h4>
+              <ul class="advantages__grid-list">
+                <li class="advantages__grid-text text-regular">
+                  Только Ваша компания
+                </li>
+              </ul>
+            </div>
+            <div class="advantages__grid-items">
+              <img
+                class="advantages__grid-icon"
+                src="./icon/advantages-grid-icon/advantages-grid-payment.svg"
+                width="83"
+                height="83"
+                alt="иконка руки с деньгами"
+              />
+              <h4 class="advantages__grid-title">Без депозита</h4>
+              <ul class="advantages__grid-list">
+                <li class="advantages__grid-text text-regular accent-color">
+                  мы не берем депозита
+                </li>
+                <li class="advantages__grid-text text-regular">
+                  оплата происходит за человека в час
+                </li>
+              </ul>
+            </div>
+            <div class="advantages__grid-items">
+              <img
+                class="advantages__grid-icon"
+                src="./icon/advantages-grid-icon/advantages-grid-location.svg"
+                width="86"
+                height="86"
+                alt="иконка точки на карте"
+              />
+              <h4 class="advantages__grid-title">В самом центре Москвы</h4>
+              <ul class="advantages__grid-list">
+                <li class="advantages__grid-text text-regular">м. Лубянка</li>
+              </ul>
+            </div>
+            <div class="advantages__grid-items">
+              <img
+                class="advantages__grid-icon"
+                src="./icon/advantages-grid-icon/advantages-grid-alcohol.svg"
+                width="73"
+                height="73"
+                alt="иконка бутылки шампанского"
+              />
+              <h4 class="advantages__grid-title">Нет пробкового сбора</h4>
+              <ul class="advantages__grid-list">
+                <li class="advantages__grid-text text-regular">
+                  Можно приносить с собой еду, напитки и алкоголь
+                  <span class="accent-color">без пробкового сбора</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <picture>
+            <source
+              srcset="./images/advantages-microphone.webp"
+              type="image/webp"
+            />
+            <img
+              class="advantages__img-microphone"
+              src="./images/advantages-microphone.png"
+              width="450"
+              height="684"
+              alt="Микрофон на ножке"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="./images/advantages-background-icon.webp"
+              type="image/webp"
+            />
+            <img
+              class="advantages__img-background"
+              src="./images/advantages-background-icon.png"
+              width="787"
+              height="783"
+              alt="Микрофон на ножке"
+            />
+          </picture>
+          <div class="advantages__book">
+            <button class="advantages__button book book-button">
+              Забронировать зал
+            </button>
+            <div class="global__background-line">
+              <div class="background-line1 background-line"></div>
+              <div class="background-line2 background-line"></div>
+              <div class="background-line3 background-line"></div>
+              <div class="background-line4 background-line"></div>
+            </div>
+            <div
+              class="section__background-accent section__background-accent-mid"
+            ></div>
+          </div>
+          <a class="advantages__background-link" href="#hero"
+            ><p class="advantages__background-text">Подняться вверх</p>
+            <button class="advantages__background-icon" type="button">
+              <img
+                class="advantages__background-arrow"
+                src="./icon/halls-arrow-left.svg"
+                alt="Назад"
+              />
+            </button>
+          </a>
+        </div>
+      </section>
+      <section class="reservation" id="reservation">
+        <div class="reservation__container container swiper reservation-swiper">
+          <div class="reservation__title padding-left">
+            <h2 class="title">Как забронировать зал?</h2>
+            <h3 class="title-sm">бронирование по шагам в чат-боте</h3>
+          </div>
+          <div class="reservation__swiper-wrapper swiper-wrapper">
+            <div class="reservation__slide swiper-slide">
+              <div class="active-slide-badge"></div>
+              <div class="reservation__phone">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide1.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide1.png"
+                    width="252"
+                    height="489"
+                    alt="скриншот инструкции Шаг 1"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide-frame.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide-frame.png"
+                    class="reservation__slide-frame"
+                    width="285"
+                    height="505"
+                    alt="рамка"
+                  />
+                </picture>
+              </div>
+              <div class="reservation__description">
+                <img
+                  src="./icon/reservation__description/reservation__description-entrance.svg"
+                  width="32"
+                  height="32"
+                  alt="иконка входа"
+                />
+                <p>
+                  Перейти в чат-бот
+                  <span class="accent-color">fh_harizma_bot</span>
+                </p>
+              </div>
+            </div>
+            <div class="reservation__slide swiper-slide">
+              <div class="active-slide-badge"></div>
+              <div class="reservation__phone">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide2.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide2.png"
+                    width="252"
+                    height="489"
+                    alt="скриншот инструкции Шаг 2"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide-frame.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide-frame.png"
+                    class="reservation__slide-frame"
+                    width="285"
+                    height="505"
+                    alt="рамка"
+                  />
+                </picture>
+              </div>
+              <div class="reservation__description">
+                <img
+                  src="./icon/reservation__description/reservation__description-people.svg"
+                  width="41"
+                  height="41"
+                  alt="иконка множества людей"
+                />
+                <p>Выбрать колличество человек</p>
+              </div>
+            </div>
+            <div class="reservation__slide swiper-slide">
+              <div class="active-slide-badge"></div>
+              <div class="reservation__phone">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide6.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide6.png"
+                    width="252"
+                    height="489"
+                    alt="скриншот инструкции Шаг 3"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide-frame.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide-frame.png"
+                    class="reservation__slide-frame"
+                    width="285"
+                    height="505"
+                    alt="рамка"
+                  />
+                </picture>
+              </div>
+              <div class="reservation__description">
+                <img
+                  src="./icon/reservation__description/reservation__description-watch.svg"
+                  width="41"
+                  height="41"
+                  alt="иконка часов"
+                />
+                <p>Выбрать колличество часов посещения</p>
+              </div>
+            </div>
+            <div class="reservation__slide swiper-slide">
+              <div class="active-slide-badge"></div>
+              <div class="reservation__phone">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide4.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide4.png"
+                    width="252"
+                    height="489"
+                    alt="скриншот инструкции Шаг 4"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide-frame.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide-frame.png"
+                    class="reservation__slide-frame"
+                    width="285"
+                    height="505"
+                    alt="рамка"
+                  />
+                </picture>
+              </div>
+              <div class="reservation__description">
+                <img
+                  src="./icon/reservation__description/reservation__description-calendar.svg"
+                  width="38"
+                  height="38"
+                  alt="иконка календаря"
+                />
+                <p>Выбрать дату</p>
+              </div>
+            </div>
+            <div class="reservation__slide swiper-slide">
+              <div class="active-slide-badge"></div>
+              <div class="reservation__phone">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide5.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide5.png"
+                    width="252"
+                    height="489"
+                    alt="скриншот инструкции Шаг 5"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide-frame.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide-frame.png"
+                    class="reservation__slide-frame"
+                    width="285"
+                    height="505"
+                    alt="рамка"
+                  />
+                </picture>
+              </div>
+              <div class="reservation__description">
+                <img
+                  src="./icon/reservation__description/reservation__description-time.svg"
+                  width="41"
+                  height="41"
+                  alt="иконка часов"
+                />
+                <p>Выбрать время старта брони</p>
+              </div>
+            </div>
+            <div class="reservation__slide swiper-slide">
+              <div class="active-slide-badge"></div>
+              <div class="reservation__phone">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide6.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide6.png"
+                    width="252"
+                    height="489"
+                    alt="скриншот инструкции Шаг 6"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide-frame.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide-frame.png"
+                    class="reservation__slide-frame"
+                    width="285"
+                    height="505"
+                    alt="рамка"
+                  />
+                </picture>
+              </div>
+              <div class="reservation__description">
+                <img
+                  src="./icon/reservation__description/reservation__description-entrance.svg"
+                  width="32"
+                  height="32"
+                  alt="иконка входа"
+                />
+                <p>
+                  Перейти в чат-бот
+                  <span class="accent-color">fh_harizma_bot</span>
+                </p>
+              </div>
+            </div>
+            <div class="reservation__slide swiper-slide">
+              <div class="active-slide-badge"></div>
+              <div class="reservation__phone">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide1.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide1.png"
+                    width="252"
+                    height="489"
+                    alt="скриншот инструкции Шаг 7"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide-frame.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide-frame.png"
+                    class="reservation__slide-frame"
+                    width="285"
+                    height="505"
+                    alt="рамка"
+                  />
+                </picture>
+              </div>
+              <div class="reservation__description">
+                <img
+                  src="./icon/reservation__description/reservation__description-watch.svg"
+                  width="41"
+                  height="41"
+                  alt="иконка часов"
+                />
+                <p>Выбрать колличество часов посещения</p>
+              </div>
+            </div>
+            <div class="reservation__slide swiper-slide">
+              <div class="active-slide-badge"></div>
+              <div class="reservation__phone">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide5.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide5.png"
+                    width="252"
+                    height="489"
+                    alt="скриншот инструкции Шаг 8"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide-frame.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide-frame.png"
+                    class="reservation__slide-frame"
+                    width="285"
+                    height="505"
+                    alt="рамка"
+                  />
+                </picture>
+              </div>
+              <div class="reservation__description">
+                <img
+                  src="./icon/reservation__description/reservation__description-time.svg"
+                  width="41"
+                  height="41"
+                  alt="иконка часов"
+                />
+                <p>Выбрать время старта брони</p>
+              </div>
+            </div>
+            <div class="reservation__slide swiper-slide">
+              <div class="active-slide-badge"></div>
+              <div class="reservation__phone">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide4.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide4.png"
+                    width="252"
+                    height="489"
+                    alt="скриншот инструкции Шаг 9"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/reservation__swiper/reservation__slide-frame.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/reservation__swiper/reservation__slide-frame.png"
+                    class="reservation__slide-frame"
+                    width="285"
+                    height="505"
+                    alt="рамка"
+                  />
+                </picture>
+              </div>
+              <div class="reservation__description">
+                <img
+                  src="./icon/reservation__description/reservation__description-calendar.svg"
+                  width="38"
+                  height="38"
+                  alt="иконка календаря"
+                />
+                <p>Выбрать дату</p>
+              </div>
+            </div>
+          </div>
+          <div class="reservation__controls slider-controls">
+            <button class="slider-prev slider-btn slider-prev-btn">
+              <img
+                class="slider__btn-img"
+                src="./icon/halls-arrow-left.svg"
+                alt="Назад"
+              />
+            </button>
+            <div class="slider-counter">
+              <span class="current">1</span>
+              <span class="divider">из</span>
+              <span class="total">9</span>
+            </div>
+            <button class="slider-next slider-btn">
+              <img
+                class="slider__btn-img"
+                src="./icon/halls-arrow-left.svg"
+                alt="вперед"
+              />
+            </button>
+          </div>
+          <div class="global__background-line">
+            <div class="background-line1 background-line"></div>
+            <div class="background-line2 background-line"></div>
+            <div class="background-line3 background-line"></div>
+            <div class="background-line4 background-line"></div>
+          </div>
+          <div
+            class="section__background-accent section__background-accent-left"
+          ></div>
+        </div>
+      </section>
+      <section class="questions padding-left" id="questions">
+        <div class="questions__container container">
+          <div class="questions__title">
+            <h2 class="title">Вопросы и ответы</h2>
+            <h3 class="title-sm">
+              Мы подготовили ответы на часто задаваемые вопросы
+            </h3>
+          </div>
+          <div class="faq__info">
+            <div class="faq__container">
+              <details class="faq__list" name="faq" open>
+                <summary class="faq__list-questions">
+                  Какое у вас караоке?
+                </summary>
+                <p class="faq__list-answers text-regular">
+                  Более 50,000 студийных фонограмм. Из них 80% - оригинальные
+                  минусовки в качестве PRO (mp3 - WAV). <br />
+                  Ежемесячное обновления репертуара. <br />Более 10,000
+                  специальных фонограмм в сопровождении оригинальных
+                  видеоклипов.
+                </p>
+              </details>
+              <details class="faq__list" name="faq">
+                <summary class="faq__list-questions">
+                  Есть ли у вас английские песни?
+                </summary>
+                <p class="faq__list-answers text-regular">
+                  Более 50,000 студийных фонограмм. Из них 80% - оригинальные
+                  минусовки в качестве PRO (mp3 - WAV). <br />
+                  Ежемесячное обновления репертуара. <br />Более 10,000
+                  специальных фонограмм в сопровождении оригинальных
+                  видеоклипов.
+                </p>
+              </details>
+              <details class="faq__list" name="faq">
+                <summary class="faq__list-questions">
+                  Можно ли подключить телефон?
+                </summary>
+                <p class="faq__list-answers text-regular">
+                  Более 50,000 студийных фонограмм. Из них 80% - оригинальные
+                  минусовки в качестве PRO (mp3 - WAV). <br />
+                  Ежемесячное обновления репертуара. <br />Более 10,000
+                  специальных фонограмм в сопровождении оригинальных
+                  видеоклипов.
+                </p>
+              </details>
+              <details class="faq__list" name="faq">
+                <summary class="faq__list-questions">
+                  Сколько микрофонов в каждом зале?
+                </summary>
+                <p class="faq__list-answers text-regular">
+                  Более 50,000 студийных фонограмм. Из них 80% - оригинальные
+                  минусовки в качестве PRO (mp3 - WAV). <br />
+                  Ежемесячное обновления репертуара. <br />Более 10,000
+                  специальных фонограмм в сопровождении оригинальных
+                  видеоклипов.
+                </p>
+              </details>
+              <details class="faq__list" name="faq">
+                <summary class="faq__list-questions">
+                  Есть ли оплата картой?
+                </summary>
+                <p class="faq__list-answers text-regular">
+                  Более 50,000 студийных фонограмм. Из них 80% - оригинальные
+                  минусовки в качестве PRO (mp3 - WAV). <br />
+                  Ежемесячное обновления репертуара. <br />Более 10,000
+                  специальных фонограмм в сопровождении оригинальных
+                  видеоклипов.
+                </p>
+              </details>
+              <details class="faq__list" name="faq">
+                <summary class="faq__list-questions">
+                  Можно приность с собой алкоголь и еду?
+                </summary>
+                <p class="faq__list-answers text-regular">
+                  Более 50,000 студийных фонограмм. Из них 80% - оригинальные
+                  минусовки в качестве PRO (mp3 - WAV). <br />
+                  Ежемесячное обновления репертуара. <br />Более 10,000
+                  специальных фонограмм в сопровождении оригинальных
+                  видеоклипов.
+                </p>
+              </details>
+              <details class="faq__list" name="faq">
+                <summary class="faq__list-questions">
+                  Как расчитывается стоимость?
+                </summary>
+                <p class="faq__list-answers text-regular">
+                  Более 50,000 студийных фонограмм. Из них 80% - оригинальные
+                  минусовки в качестве PRO (mp3 - WAV). <br />
+                  Ежемесячное обновления репертуара. <br />Более 10,000
+                  специальных фонограмм в сопровождении оригинальных
+                  видеоклипов.
+                </p>
+              </details>
+            </div>
+            <div class="faq__container-facilities">
+              <h2 class="faq__container-facilities-title">
+                В нашем заведении <br />
+                Бельгийский ковролин. На <br />
+                входе выдают
+                <span class="accent-color"
+                  >индивидуально запакованные тапочки,</span
+                >
+                <br />в которые необходимо переобуться.
+              </h2>
+              <picture class="faq__container-facilities-slippers">
+                <source
+                  srcset="./images/faq__container-facilities-slippers.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/faq__container-facilities-slippers.png"
+                  width="553"
+                  height="339"
+                  alt="домашние тапочки"
+                />
+              </picture>
+              <button class="faq__container-facilities-button book book-button">
+                Забронировать зал
+              </button>
+            </div>
+          </div>
+          <div class="global__background-line">
+            <div class="background-line1 background-line"></div>
+            <div class="background-line2 background-line"></div>
+            <div class="background-line3 background-line"></div>
+            <div class="background-line4 background-line"></div>
+          </div>
+          <div
+            class="section__background-accent section__background-accent-mid"
+          ></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <a class="logo header__logo" href="#">
+          <img
+            class="logo__icon"
+            src="./icon/logo-icon.svg"
+            width="293"
+            height="67"
+            alt="Логотип караоке бара Харизма"
+          />
+        </a>
+        <nav class="footer__info" id="footer__info" aria-label="меню подвала">
+          <a class="footer__phone" title="номер телефона" href="+380979709090">
+            <svg class="info__svg info__phone-svg" width="29" height="29">
+              <use
+                class="header__phone-icon"
+                href="./icon/sprit.svg#phone"
+              ></use>
+            </svg>
+            <p class="header__info-text">+38 (097) 970-90-90</p>
+          </a>
+          <a
+            class="footer__calendar"
+            title="дни работы, без выходных, круглосуточно"
+            href="#"
+          >
+            <svg class="info__svg info__phone-svg" width="29" height="29">
+              <use
+                class="header__phone-icon"
+                href="./icon/sprit.svg#calendar"
+              ></use>
+            </svg>
+            <p class="header__info-text">Пн — Вс круглосуточно</p>
+          </a>
+          <button class="footer__map map" id="map" title="карта" aria-label="карта">
+            <svg class="info__svg info__svg-map" width="34" height="34">
+              <use class="header__mark-icon" href="./icon/sprit.svg#mark"></use>
+            </svg>
+            <span class="header__info-text"
+              >м. Лубянка, <br class="footer__map-br" />
+              ул. Сретенский переулок, 4
+            </span>
+          </button>
+        </nav>
+        <button class="footer__book text__button-hf" aria-label="Забронировать">
+          Построить маршрут
+        </button>
+        <nav
+          class="footer__info-mobil"
+          id="footer__info-mobil"
+          aria-label="Главное меню"
+        >
+          <a class="header__phone" title="номер телефона" href="+380979709090">
+            <svg class="info__svg info__phone-svg" width="29" height="29">
+              <use
+                class="header__phone-icon"
+                href="./icon/sprit.svg#phone"
+              ></use>
+            </svg>
+            <p class="header__info-text header__text">+38 (097) 970-90-90</p>
+          </a>
+          <button class="header__map map" id="map" title="карта" aria-label="карта">
+            <svg class="info__svg info__svg-map" width="34" height="34">
+              <use class="header__mark-icon" href="./icon/sprit.svg#mark"></use>
+            </svg>
+            <span class="header__info-text header__text">м. Лубянка </span>
+          </button>
+          <a class="header__our-halls text__button-hf" href="#halls">Наши залы</a>
+          <button
+            class="header__book book text__button-hf"
+            aria-label="Забронировать"
+          >
+            Забронировать
+          </button>
+        </nav>
+        <div class="global__background-line">
+          <div class="background-line1 background-line"></div>
+          <div class="background-line2 background-line"></div>
+          <div class="background-line3 background-line"></div>
+          <div class="background-line4 background-line"></div>
+        </div>
+        <div
+          class="section__background-accent section__background-accent-left"
+        ></div>
+      </div>
+    </footer>
+    <div class="modal" id="modal-book">
+      <div class="modal__window mobil__window-book">
+        <button class="modal__close" aria-label="закрыть" title="закрыть">
+          <svg width="22" height="22">
+            <use href="./icon/sprit.svg#cross"></use>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <h3 class="modal__title title-sm">Забронировать зал</h3>
+          <form class="modal-book__form">
+            <label class="modal-book__label">
+              <input
+                class="modal-book__input"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+                required
+              />
+            </label>
+            <button class="modal-book__submit" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-map">
+      <div class="modal__window mobil__window-map">
+        <button class="modal__close" aria-label="закрыть" title="закрыть">
+          <svg width="22" height="22">
+            <use href="./icon/sprit.svg#cross"></use>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <h3 class="modal__title">Мы на карте</h3>
+          <div id="map" style="width: 100%; height: 100%">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A3e4ac2763af88ad24c447d8148ca70f30be01208c8ba6caee70290be95098d3f&amp;source=constructor"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              loading="lazy"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
